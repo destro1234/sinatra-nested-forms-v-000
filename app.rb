@@ -5,5 +5,9 @@ module FormsLab
 
     # code other routes/actions here
 
+    post '/' do
+      @pirate = Pirate.new(params[:pirate])
+    end
+
   end
 end
